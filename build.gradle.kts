@@ -14,7 +14,7 @@ plugins {
 tasks.getByName<BootBuildImage>("bootBuildImage") {
 
     environment = mapOf(
-        "BP_NATIVE_IMAGE_BUILD_ARGUMENTS" to "--initialize-at-run-time=org.springframework.data.repository.util.QueryExecutionConverters,org.springframework.http.codec.xml.XmlEventDecoder --trace-class-initialization=com.ctc.wstx.api.ReaderConfig,org.apache.commons.logging.LogFactory,com.ctc.wstx.util.DefaultXmlSymbolTable,org.apache.commons.logging.LogFactoryService,com.ctc.wstx.api.CommonConfig,com.ctc.wstx.stax.WstxInputFactory"
+        "BP_NATIVE_IMAGE_BUILD_ARGUMENTS" to "--initialize-at-run-time=org.springframework.data.repository.util.QueryExecutionConverters,org.springframework.http.codec.xml.XmlEventDecoder --trace-class-initialization=com.ctc.wstx.api.ReaderConfig,org.apache.commons.logging.LogFactory,com.ctc.wstx.util.DefaultXmlSymbolTable,org.apache.commons.logging.LogFactoryService,com.ctc.wstx.api.CommonConfig,com.ctc.wstx.stax.WstxInputFactory --verbose"
     )
 }
 
